@@ -1,3 +1,6 @@
+# Publishes `dist` after `npm run build`. GitHub Pages must use Source: GitHub Actions.
+# If Source is "Deploy from a branch" (e.g. main / root), the live site serves raw
+# index.html with /src/main.jsx — no Vite on Pages, so the app stays blank.
 name: Deploy to GitHub Pages
 
 on:
