@@ -1,3 +1,5 @@
+import { publicUrl } from '../utils/publicUrl.js'
+
 /** AaboPay project media — under /public/projects/aabopay/ */
 export const aabopayGallery = [
   {
@@ -9,7 +11,7 @@ export const aabopayGallery = [
   },
   {
     type: 'pdf',
-    href: '/projects/aabopay/coding-connoisseurs-final-submission.pdf',
+    href: publicUrl('/projects/aabopay/coding-connoisseurs-final-submission.pdf'),
     title: 'Coding Connoisseurs — final submission',
     caption:
       'KSU FinTech High School Hackathon deck: AaboPay concept, problem framing, and demo storyline (team submission).',

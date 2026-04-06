@@ -1,3 +1,4 @@
+import { publicUrl } from '../utils/publicUrl.js'
 import { aabopayGallery } from './aabopayGallery.js'
 import { aabopayDetailSections } from './aabopayProjectDetail.js'
 import { cricketCoachGallery } from './cricketCoachGallery.js'
@@ -17,7 +18,7 @@ export const site = {
     'I like learning new ML ideas',
     'Open to internships & collabs',
   ],
-  profileImage: '/shivam-profile.png',
+  profileImage: publicUrl('/shivam-profile.png'),
   /** Navbar: `sectionId` = hash on `/`; `path` = separate route. */
   nav: [
     { label: 'Home', sectionId: 'home' },
@@ -35,11 +36,11 @@ export const site = {
     phone: '+14709896893',
     phoneDisplay: '(470) 989-6893',
   },
-  resumeUrl: '/resume.pdf',
+  resumeUrl: publicUrl('/resume.pdf'),
   about: {
     title: 'About Me',
     /** Photo shown only in the About section (home masthead uses `profileImage`). */
-    profileImage: '/shivam-about.png',
+    profileImage: publicUrl('/shivam-about.png'),
     journeyTitle: 'My Journey',
     journeyParagraphs: [
       'I have always been fascinated by how code turns into real-world solutions—computer science became my passion from my first “Hello World.” To me, programming is a way to express myself and build something unique; the blend of creativity, problem-solving, and critical thinking is what feels distinctive about the field.',
@@ -75,43 +76,43 @@ export const site = {
       title: 'C++ Certificate of Excellence',
       issuer: 'CodingNinjas',
       year: '',
-      pdf: '/certificates/cpp-certificate-of-excellence.pdf',
+      pdf: publicUrl('/certificates/cpp-certificate-of-excellence.pdf'),
     },
     {
       title: 'Python Course Completion Certificate',
       issuer: 'Udemy',
       year: '',
-      pdf: '/certificates/python-course-completion-certificate.pdf',
+      pdf: publicUrl('/certificates/python-course-completion-certificate.pdf'),
     },
     {
       title: "Certificate — BYJU'S Coding",
       issuer: "BYJU'S",
       year: '',
-      pdf: '/certificates/certificate-byjus-coding.pdf',
+      pdf: publicUrl('/certificates/certificate-byjus-coding.pdf'),
     },
     {
       title: 'C++ Certificate',
       issuer: 'CodingNinjas',
       year: '',
-      pdf: '/certificates/cpp-certificate.pdf',
+      pdf: publicUrl('/certificates/cpp-certificate.pdf'),
     },
     {
       title: 'Udemy Web Development Certificate',
       issuer: 'Udemy',
       year: '',
-      pdf: '/certificates/udemy-web-development-certificate.pdf',
+      pdf: publicUrl('/certificates/udemy-web-development-certificate.pdf'),
     },
     {
       title: 'Android App Development',
       issuer: 'App development course',
       year: '',
-      pdf: '/certificates/shivam-certificate-android-app-development.pdf',
+      pdf: publicUrl('/certificates/shivam-certificate-android-app-development.pdf'),
     },
     {
       title: 'USACO Silver',
       issuer: 'USA Computing Olympiad',
       year: '',
-      image: '/certificates/usaco-silver-verification.png',
+      image: publicUrl('/certificates/usaco-silver-verification.png'),
     },
     {
       title: 'Harvard CS50',
@@ -171,7 +172,7 @@ export const site = {
       projectName: 'CricketCoach',
       summary:
         'State-level GASTC in March 2026—Evan Saran from Northview and I entered Web & Mobile Apps with CricketCoach, an AI analysis tool for cricket coaching, and earned 1st place.',
-      image: '/competitions/gastc-cricketcoach-2026.png',
+      image: publicUrl('/competitions/gastc-cricketcoach-2026.png'),
       imageAlt:
         'GASTC 25th anniversary stage: team with medals after winning 1st place in Web & Mobile Apps for CricketCoach.',
       body: [
@@ -192,7 +193,7 @@ export const site = {
       projectName: 'AaboPay',
       summary:
         'Kennesaw State University’s one-day high school FinTech challenge focused on safer mobile payments in Africa—we built AaboPay around a real Nigerian payments context with Alvin (Forsyth Central), Bala (Lambert High), and Allen (West Forsyth), earned finalist, and finished in the top 10.',
-      image: '/competitions/ksu-fintech-hackathon.png',
+      image: publicUrl('/competitions/ksu-fintech-hackathon.png'),
       imageAlt:
         'Team photo with KSU mascot Scrappy the Owl at the FinTech hackathon; celebrating a top-10 finish.',
       body: [
@@ -213,12 +214,12 @@ export const site = {
       projectName: "Compiler's Collective",
       summary:
         "MIT Zero Robotics High School Tournament (Feb 2026)—as Compiler's Collective on Alliance 10 with teammates in Greece, Madison Highland Prep, and Northview, we reached the ISS finals broadcast and placed third in the world.",
-      image: '/competitions/zero-robotics-compilers-collective.png',
+      image: publicUrl('/competitions/zero-robotics-compilers-collective.png'),
       imageAlt:
         "Compiler's Collective team logo: Zero Robotics crest with space-themed robot mark.",
       extraImages: [
         {
-          src: '/competitions/zero-robotics-tournament-bracket.png',
+          src: publicUrl('/competitions/zero-robotics-tournament-bracket.png'),
           alt: 'MIT Zero Robotics high school tournament bracket showing Alliance 10 through winners, redemption, and finals to third place.',
           caption: 'High School Tournament bracket — Alliance 10’s path to 3rd place worldwide',
         },
@@ -241,7 +242,7 @@ export const site = {
       projectName: 'FrontlineReady',
       summary:
         'February 2026 MLH Cyberwave with Reach Capital—Evan Saran from Northview and I took 1st place with FrontlineReady, using our AccentCoach slides to show accent clarity, realistic customer scenarios, and Gemini-powered coaching for frontline workers; we also received Logitech Brio 101 webcams.',
-      image: '/competitions/mlh-cyberwave-frontlineready-win.png',
+      image: publicUrl('/competitions/mlh-cyberwave-frontlineready-win.png'),
       imageAlt:
         'Shivam and Evan Saran holding Logitech Brio 101 webcam boxes after winning first place at the MLH Cyberwave hackathon.',
       body: [
@@ -260,7 +261,7 @@ export const site = {
       {
         title: 'Incoming Trainee — SUMMET Program',
         range: 'Colorado School of Mines · June 2026',
-        logo: '/logos/colorado-school-of-mines.png',
+        logo: publicUrl('/logos/colorado-school-of-mines.png'),
         logoAlt: 'Colorado School of Mines',
         logoSquare: true,
         highlights: [
@@ -271,19 +272,19 @@ export const site = {
       {
         title: 'Participant — Rice University Precollege Program (Computer Engineering)',
         range: 'Rice University · Dec 2025',
-        logo: '/logos/rice.png',
+        logo: publicUrl('/logos/rice.png'),
         logoAlt: 'Rice University',
         logoSquare: true,
         highlights: [
           'Completed intensive college-level computer engineering coursework and hands-on projects in programming, hardware, and engineering principles and won the Rice University Precollege Scholarship Award ($900).',
           'Developed a culminating capstone project that helps frontline workers benefit the economy, with direct feedback and mentorship from AI architect Steven Greulich.',
         ],
-        pdf: '/certificates/rice-university-precollege-completion-certificate.pdf',
+        pdf: publicUrl('/certificates/rice-university-precollege-completion-certificate.pdf'),
       },
       {
         title: 'Trainee — Honeywell Leadership Challenge Academy',
         range: 'US Space and Rocket Center, Alabama · Oct 2025',
-        logo: '/logos/honeywell.png',
+        logo: publicUrl('/logos/honeywell.png'),
         logoAlt: 'Honeywell',
         highlights: [
           'Collaborated with students from around the world on engineering and leadership challenges, applying analytical thinking and problem-solving to real-world STEM scenarios and simulated space environments.',
@@ -300,7 +301,7 @@ export const site = {
     degree: '11th grade',
     school: 'Northview High School',
     range: 'Johns Creek, Georgia',
-    schoolLogo: '/northview-logo.png',
+    schoolLogo: publicUrl('/northview-logo.png'),
   },
   contact: {
     title: 'Get In Touch',

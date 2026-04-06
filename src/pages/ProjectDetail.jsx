@@ -170,6 +170,7 @@ export default function ProjectDetail() {
               }
 
               if (kind === 'video' && item.src) {
+                const videoSrc = item.src
                 return (
                   <figure
                     key={key}
@@ -183,10 +184,10 @@ export default function ProjectDetail() {
                         preload="metadata"
                         aria-label={item.title ?? 'Project demo video'}
                       >
-                        <source src={item.src} />
+                        <source src={videoSrc} />
                         Your browser does not support embedded video.{' '}
                         <a
-                          href={item.src}
+                          href={videoSrc}
                           className="text-violet-400 underline"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -199,7 +200,7 @@ export default function ProjectDetail() {
                     <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 bg-zinc-950/50 px-4 py-3">
                       <span className="text-sm font-semibold text-zinc-200">{item.title ?? 'Video'}</span>
                       <a
-                        href={item.src}
+                        href={videoSrc}
                         download
                         className="text-sm font-medium text-violet-400 transition hover:text-violet-300"
                       >
@@ -216,6 +217,7 @@ export default function ProjectDetail() {
               }
 
               if (kind === 'pdf') {
+                const pdfHref = item.href
                 return (
                   <figure
                     key={key}
@@ -224,13 +226,13 @@ export default function ProjectDetail() {
                     <div className="aspect-[4/3] w-full min-h-[20rem] bg-zinc-950/80 sm:min-h-[28rem]">
                       <iframe
                         title={item.title ?? 'PDF document'}
-                        src={`${item.href}#view=FitH`}
+                        src={`${pdfHref}#view=FitH`}
                         className="h-full w-full border-0"
                       />
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 bg-zinc-950/50 px-4 py-3">
                       <a
-                        href={item.href}
+                        href={pdfHref}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm font-medium text-violet-400 transition hover:text-violet-300"
