@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { site } from '../data/site.js'
 import SectionTitle from '../components/ui/SectionTitle.jsx'
 
@@ -17,7 +18,7 @@ export default function Projects() {
         <div className="grid flex-1 auto-rows-fr gap-7 sm:gap-8 md:grid-cols-2 md:items-stretch">
           {site.projects.map((p) => (
             <article
-              key={p.title}
+              key={p.slug ?? p.title}
               className="flex h-full min-h-[240px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center shadow-lg shadow-black/30 backdrop-blur-md transition hover:border-violet-400/30 sm:min-h-[260px]"
             >
               <div>
@@ -32,6 +33,15 @@ export default function Projects() {
                 >
                   View project
                 </a>
+              ) : p.slug ? (
+                <div className="mt-8 flex justify-center">
+                  <Link
+                    to={`/projects/${p.slug}`}
+                    className="inline-flex min-h-[2.75rem] min-w-[11rem] max-w-full items-center justify-center rounded-xl border border-violet-400/40 bg-violet-500/[0.12] px-6 py-3 text-base font-semibold tracking-wide text-violet-100 shadow-[0_0_24px_rgba(124,58,237,0.15)] transition hover:border-violet-400/55 hover:bg-violet-500/[0.18]"
+                  >
+                    {p.status ?? 'View more'}
+                  </Link>
+                </div>
               ) : p.status ? (
                 <div className="mt-8 flex justify-center">
                   <span

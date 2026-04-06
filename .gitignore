@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local-only docs (never commit)
+LOCAL_README.md
+
+# Too large for GitHub (>100 MB); host demo on YouTube/Drive or compress to MP4 <100 MB
+public/projects/aabopay/aabopay-project-demo.mov

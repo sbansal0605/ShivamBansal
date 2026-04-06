@@ -27,7 +27,7 @@ export default function Certifications() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {site.certifications.map((c, i) => (
           <GlassCard
-            key={c.pdf ?? `${c.title}-${c.issuer}-${i}`}
+            key={c.pdf ?? c.image ?? `${c.title}-${c.issuer}-${i}`}
             className="text-center shadow-[0_0_24px_rgba(124,58,237,0.08)] transition hover:border-violet-400/25"
           >
             <MedalIcon />
@@ -42,6 +42,16 @@ export default function Certifications() {
                 className="mt-4 inline-flex items-center justify-center rounded-lg border border-violet-400/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-300 transition hover:border-violet-400/50 hover:bg-violet-500/20"
               >
                 View certificate (PDF)
+              </a>
+            ) : null}
+            {c.image && !c.pdf ? (
+              <a
+                href={c.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center justify-center rounded-lg border border-violet-400/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-300 transition hover:border-violet-400/50 hover:bg-violet-500/20"
+              >
+                View certification
               </a>
             ) : null}
           </GlassCard>

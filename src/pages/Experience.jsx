@@ -33,21 +33,43 @@ export default function Experience() {
                 className={i > 0 ? 'mt-12 border-t border-white/10 pt-12 sm:mt-14 sm:pt-14' : ''}
               >
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-8">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-violet-400/40 bg-violet-400/10 sm:h-16 sm:w-16">
-                    <svg
-                      className="h-7 w-7 text-violet-400 sm:h-8 sm:w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  <div
+                    className={`flex shrink-0 items-center justify-center overflow-hidden border ${
+                      item.logo
+                        ? item.logoSquare
+                          ? 'h-14 w-14 rounded-xl border-white/25 bg-white p-2 shadow-[0_0_24px_rgba(255,255,255,0.06)] sm:h-16 sm:w-16 sm:p-2.5'
+                          : 'h-14 w-auto max-w-[9.5rem] rounded-xl border-white/25 bg-white px-2.5 py-1.5 shadow-[0_0_24px_rgba(255,255,255,0.06)] sm:h-16 sm:max-w-[11rem] sm:px-3 sm:py-2'
+                        : 'h-14 w-14 rounded-full border-violet-400/40 bg-violet-400/10 sm:h-16 sm:w-16'
+                    }`}
+                  >
+                    {item.logo ? (
+                      <img
+                        src={item.logo}
+                        alt={item.logoAlt ?? ''}
+                        className={
+                          item.logoSquare
+                            ? 'h-full w-full object-contain object-center'
+                            : 'h-9 w-auto max-w-full object-contain object-center sm:h-10'
+                        }
+                        loading="lazy"
+                        decoding="async"
                       />
-                    </svg>
+                    ) : (
+                      <svg
+                        className="h-7 w-7 text-violet-400 sm:h-8 sm:w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    )}
                   </div>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-lg font-semibold leading-snug text-white sm:text-xl">{item.title}</h3>

@@ -32,17 +32,17 @@ export default function About() {
   return (
     <div
       id="about"
-      className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20 pt-14 sm:scroll-mt-28 sm:px-6 sm:pb-24 sm:pt-16 lg:px-8"
+      className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20 pt-6 sm:scroll-mt-28 sm:px-6 sm:pb-24 sm:pt-8 lg:px-8"
     >
       <SectionTitle>{about.title}</SectionTitle>
-      <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-        <GlassCard className="flex flex-col items-center justify-center border-white/[0.07] p-6 sm:p-8 lg:col-span-1">
-          <figure className="w-full max-w-[260px]">
-            <div className="overflow-hidden rounded-3xl bg-zinc-900/80 shadow-2xl shadow-black/60 ring-1 ring-white/10">
+      <div className="grid gap-6 lg:grid-cols-3 lg:items-stretch lg:gap-8">
+        <GlassCard className="flex h-full min-h-0 flex-col border-white/[0.07] p-2 sm:p-3 lg:col-span-1">
+          <figure className="flex min-h-0 w-full flex-1 flex-col">
+            <div className="min-h-0 flex-1 overflow-hidden rounded-2xl bg-zinc-900/80 shadow-2xl shadow-black/60 ring-1 ring-white/10 sm:rounded-3xl">
               <img
                 src={about.profileImage}
                 alt={site.name}
-                className="aspect-[4/5] w-full object-cover object-[center_28%] sm:aspect-[3/4]"
+                className="h-full min-h-[18rem] w-full object-cover object-[center_28%] sm:min-h-[22rem] lg:min-h-full lg:aspect-auto"
               />
             </div>
           </figure>

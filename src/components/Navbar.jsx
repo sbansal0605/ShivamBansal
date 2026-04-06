@@ -49,11 +49,14 @@ export default function Navbar() {
       onHome && activeId === id ? 'text-violet-400' : 'text-zinc-500 hover:text-zinc-200',
     ].join(' ')
 
-  const linkClassPath = (path) =>
-    [
+  const linkClassPath = (path) => {
+    const active =
+      location.pathname === path || (path !== '/' && location.pathname.startsWith(`${path}/`))
+    return [
       'rounded-md px-2 py-1 text-sm font-medium transition-colors',
-      location.pathname === path ? 'text-violet-400' : 'text-zinc-500 hover:text-zinc-200',
+      active ? 'text-violet-400' : 'text-zinc-500 hover:text-zinc-200',
     ].join(' ')
+  }
 
   const onSectionClick = (id) => (e) => {
     e.preventDefault()
