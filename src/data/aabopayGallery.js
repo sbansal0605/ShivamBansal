@@ -1,7 +1,12 @@
 /** AaboPay project media — under /public/projects/aabopay/ */
 export const aabopayGallery = [
-  // Optional: host screen recording as YouTube (unlisted), then add:
-  // { type: 'youtube', videoUrl: 'https://www.youtube.com/watch?v=...', title: 'Project demo', caption: '...' },
+  {
+    type: 'youtube',
+    videoUrl: 'https://youtu.be/7L4RN4d-Pt4',
+    title: 'Project demo',
+    caption:
+      'Screen recording of the AaboPay prototype—trust signals, flows, and hackathon demo path (unlisted on YouTube).',
+  },
   {
     type: 'pdf',
     href: '/projects/aabopay/coding-connoisseurs-final-submission.pdf',
