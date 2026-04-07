@@ -254,6 +254,35 @@ export const site = {
       videoUrl: null,
       links: [],
     },
+    {
+      slug: 'blue-ocean-entrepreneurship-challenge',
+      sortDate: '2026-04-01',
+      title: 'Blue Ocean Entrepreneurship Challenge',
+      date: 'April 2026',
+      result: 'Top 500',
+      projectName: null,
+      summary:
+        'Blue Ocean Entrepreneurship Challenge — placed in the Top 500, recognized for advancing through the competition with an entrepreneurship-focused submission.',
+      image: publicUrl('/competitions/blue-ocean-top-500.png'),
+      imageAlt:
+        'Blue Ocean Competition Top 500 recognition graphic for ThermaScales, listing team members, schools, and USA.',
+      extraImages: [
+        {
+          src: publicUrl('/competitions/blue ocean.png'),
+          alt: 'ThermaScale Skins logo with the tagline Adaptive Climate Defense.',
+          caption: 'ThermaScale Skins team logo used for the Blue Ocean Entrepreneurship Challenge submission.',
+        },
+      ],
+      body: [
+        'The Blue Ocean Entrepreneurship Challenge is a global entrepreneurship competition centered on student-led innovation, entrepreneurship, and real-world problem solving. My team entered with ThermaScale, a climate-focused roofing concept, and advanced into the Top 500.',
+        'ThermaScale is designed as a simple, consumer-friendly upgrade to existing roofs. It is a peel-and-stick layer that can be applied directly over standard roofing materials, turning them into passive cooling surfaces. Instead of letting roofs absorb and trap heat, ThermaScale reflects most of the sun’s radiation away from the building, keeping indoor temperatures lower without using electricity. The system is inspired by natural heat-resistant structures and is built to adapt to different conditions, helping reduce reliance on air conditioning while making homes more energy efficient overall.',
+        'Building ThermaScale started as a simple question: why are we using so much energy to cool our homes instead of fixing the way they handle heat in the first place? From there, it turned into one of the most exciting projects we worked on. We explored everything from passive cooling and biomimicry to energy systems and real-world housing challenges. The most enjoyable part was connecting ideas across different fields and realizing that something as ordinary as a roof could be reimagined into a piece of climate technology.',
+        'At the same time, the project pushed us to balance ambition with realism. It is easy to imagine a bold concept, but making sure it actually makes sense for homeowners, cost, and real-world use took repeated iteration. We spent time refining not only the technology itself, but also the business model and the way it could realistically be installed and scaled. That process pushed the idea beyond “interesting concept” into the much harder question of whether it could truly work.',
+        'What made ThermaScale especially exciting was the feeling that it could grow beyond the competition. The idea is not only about saving energy, but also about rethinking how everyday infrastructure can respond to a changing climate. Watching it evolve from an early concept into something more tangible and impactful was incredibly rewarding, and it is a project we are excited to keep building on.',
+      ],
+      videoUrl: null,
+      links: [],
+    },
   ],
   experience: {
     title: 'Experience',
