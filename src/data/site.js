@@ -5,6 +5,8 @@ import { cricketCoachGallery } from './cricketCoachGallery.js'
 import { cricketCoachDetailSections } from './cricketCoachProjectDetail.js'
 import { frontlineReadyGallery } from './frontlineReadyGallery.js'
 import { frontlineReadyDetailSections } from './frontlineReadyProjectDetail.js'
+import { shelfSyncGallery } from './shelfSyncGallery.js'
+import { shelfSyncDetailSections } from './shelfSyncProjectDetail.js'
 
 export const site = {
   name: 'Shivam Bansal',
@@ -155,6 +157,16 @@ export const site = {
       detailSections: aabopayDetailSections,
       gallery: aabopayGallery,
     },
+    {
+      title: 'ShelfSync: Brand-Subsidized Dynamic Pricing for Independent Retailers',
+      slug: 'shelfsync',
+      description:
+        'A real-time dynamic pricing platform where CPG brands fund discounts for bodegas and corner stores—shoppers pay less, stores keep full margin, and brands move inventory and reduce waste. First place at the Microsoft Divergent Teams Hackathon (Atlanta 2026) with Sony Bluetooth headphones; we pitched to leaders from Microsoft, CONA, Coca-Cola, and Equifax and advanced to nationals at Microsoft HQ in Seattle.',
+      href: null,
+      status: 'View More',
+      detailSections: shelfSyncDetailSections,
+      gallery: shelfSyncGallery,
+    },
   ],
   /**
    * /competitions — append new items at the end of this array. Each entry needs `sortDate`
@@ -163,6 +175,28 @@ export const site = {
    * Optional: extraImages: [{ src, alt, caption? }] on a detail page (in addition to `image`).
    */
   competitions: [
+    {
+      slug: 'microsoft-divergent-teams-hackathon-2026-shelfsync',
+      sortDate: '2026-04-11',
+      title: 'Microsoft Divergent Teams Hackathon',
+      date: 'April 2026',
+      result: '1st place',
+      projectName: 'ShelfSync',
+      summary:
+        'Microsoft Divergent Teams Hackathon, Atlanta (April 2026)—workshops on real-world ML models and agentic AI, then a final pitch of ShelfSync to senior engineers and VPs from Microsoft, CONA, Coca-Cola, and Equifax. First place and Sony Bluetooth headphones; next stop is Microsoft headquarters in Seattle for the national round.',
+      image: publicUrl('/competitions/microsoft-divergent-teams-hackathon-atlanta-2026.png'),
+      imageAlt:
+        'Two teammates in front of the Microsoft campus sign in Atlanta after the Divergent Teams Hackathon, with an ATLANTA banner and CONA Services tote.',
+      body: [
+        'The Microsoft Divergent Teams Hackathon in Atlanta (April 2026) paired intensive building time with sponsor-led learning. We attended workshops on how production systems use real-world models at scale and on agentic AI—autonomous, tool-using workflows that plan, call APIs, and adapt—so our weekend work sat in the same vocabulary senior engineers use when they ship.',
+        'ShelfSync is a brand-subsidized dynamic pricing concept for independent retailers: CPG companies fund discounts in real time so shoppers pay less, bodegas and corner stores keep full retail margin, and brands move inventory and cut waste. The demo spans a store portal (live dashboards, inventory with expiry and subsidy badges, POS deals, invoice-style analytics, scripted assistant flows) and a brand portal (campaign builder, billing, ESG impact, Monte Carlo–style simulator), tied together with trigger logic for weather, velocity, expiry, and local events—plus demo mode so judges could feel heatwave and expiry storylines in one sitting.',
+        'Final presentations were in front of industry leaders—senior engineers and vice presidents from Microsoft, CONA, Coca-Cola, and Equifax—not a student-only room. We walked them through the dual-sided marketplace, how subsidies protect store margin, and how the prototype’s Next.js, TypeScript, streaming feeds, and rules narrative could evolve toward production.',
+        'That pitch earned first place at the regional event. We also took home Sony Bluetooth headphones as part of the win and qualified for the national level of the competition.',
+        'The national round will bring us to Microsoft headquarters in Seattle, where we will participate in the next phase of the Divergent Teams Hackathon against other regional winners—carrying the same ShelfSync story from Atlanta to the main campus.',
+      ],
+      videoUrl: null,
+      links: [],
+    },
     {
       slug: 'gastc-2026-cricketcoach-web-mobile',
       sortDate: '2026-03-01',
