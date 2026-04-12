@@ -3,7 +3,7 @@ import { site } from '../data/site.js'
 import GlassCard from '../components/ui/GlassCard.jsx'
 
 function SocialIcon({ icon }) {
-  const c = 'h-5 w-5 text-violet-400'
+  const c = 'h-6 w-6 shrink-0 text-violet-400 sm:h-7 sm:w-7'
   switch (icon) {
     case 'mail':
       return (
@@ -114,16 +114,16 @@ export default function Contact() {
             </button>
           </form>
         </GlassCard>
-        <GlassCard>
-          <h3 className="text-lg font-semibold text-violet-400">{contact.socialTitle}</h3>
-          <ul className="mt-6 space-y-3">
+        <GlassCard className="flex h-full min-h-0 flex-col">
+          <h3 className="shrink-0 text-lg font-semibold text-violet-400">{contact.socialTitle}</h3>
+          <ul className="mt-6 flex min-h-0 flex-1 flex-col gap-3">
             {socialLinks.map((s) => (
-              <li key={s.label}>
+              <li key={s.label} className="flex min-h-0 flex-1">
                 <a
                   href={s.href}
                   target={s.href.startsWith('http') ? '_blank' : undefined}
                   rel={s.href.startsWith('http') ? 'noreferrer' : undefined}
-                  className="flex items-center gap-3 rounded-xl border border-zinc-700/80 bg-zinc-800/40 px-4 py-3 transition hover:border-violet-400/35 hover:bg-zinc-800/60"
+                  className="flex h-full min-h-[3.25rem] w-full items-center gap-4 rounded-xl border border-zinc-700/80 bg-zinc-800/40 px-5 py-4 text-base transition hover:border-violet-400/35 hover:bg-zinc-800/60"
                 >
                   <SocialIcon icon={s.icon} />
                   <span className="font-semibold text-white">{s.label}</span>

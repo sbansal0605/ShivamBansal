@@ -188,7 +188,7 @@ export const site = {
       imageAlt:
         'Two teammates in front of the Microsoft campus sign in Atlanta after the Divergent Teams Hackathon, with an ATLANTA banner and CONA Services tote.',
       body: [
-        'The Microsoft Divergent Teams Hackathon in Atlanta (April 2026) paired intensive building time with sponsor-led learning. We attended workshops on how production systems use real-world models at scale and on agentic AI—autonomous, tool-using workflows that plan, call APIs, and adapt—so our weekend work sat in the same vocabulary senior engineers use when they ship.',
+        'The Microsoft Divergent Teams Hackathon in Atlanta (April 2026) paired intensive building time with sponsor-led learning. I was on a team with students from Innovation Academy and Northview High School. We attended workshops on how production systems use real-world models at scale and on agentic AI—autonomous, tool-using workflows that plan, call APIs, and adapt—so our weekend work sat in the same vocabulary senior engineers use when they ship.',
         'ShelfSync is a brand-subsidized dynamic pricing concept for independent retailers: CPG companies fund discounts in real time so shoppers pay less, bodegas and corner stores keep full retail margin, and brands move inventory and cut waste. The demo spans a store portal (live dashboards, inventory with expiry and subsidy badges, POS deals, invoice-style analytics, scripted assistant flows) and a brand portal (campaign builder, billing, ESG impact, Monte Carlo–style simulator), tied together with trigger logic for weather, velocity, expiry, and local events—plus demo mode so judges could feel heatwave and expiry storylines in one sitting.',
         'Final presentations were in front of industry leaders—senior engineers and vice presidents from Microsoft, CONA, Coca-Cola, and Equifax—not a student-only room. We walked them through the dual-sided marketplace, how subsidies protect store margin, and how the prototype’s Next.js, TypeScript, streaming feeds, and rules narrative could evolve toward production.',
         'That pitch earned first place at the regional event. We also took home Sony Bluetooth headphones as part of the win and qualified for the national level of the competition.',
@@ -308,7 +308,7 @@ export const site = {
         },
       ],
       body: [
-        'The Blue Ocean Entrepreneurship Challenge is a global entrepreneurship competition centered on student-led innovation, entrepreneurship, and real-world problem solving. My team entered with ThermaScale, a climate-focused roofing concept, and advanced into the Top 500.',
+        'The Blue Ocean Entrepreneurship Challenge is a global entrepreneurship competition centered on student-led innovation, entrepreneurship, and real-world problem solving. I was on a team with students from Northview High School and other schools in the Blue Ocean Entrepreneurship Challenge. My team entered with ThermaScale, a climate-focused roofing concept, and advanced into the Top 500.',
         'ThermaScale is designed as a simple, consumer-friendly upgrade to existing roofs. It is a peel-and-stick layer that can be applied directly over standard roofing materials, turning them into passive cooling surfaces. Instead of letting roofs absorb and trap heat, ThermaScale reflects most of the sun’s radiation away from the building, keeping indoor temperatures lower without using electricity. The system is inspired by natural heat-resistant structures and is built to adapt to different conditions, helping reduce reliance on air conditioning while making homes more energy efficient overall.',
         'Building ThermaScale started as a simple question: why are we using so much energy to cool our homes instead of fixing the way they handle heat in the first place? From there, it turned into one of the most exciting projects we worked on. We explored everything from passive cooling and biomimicry to energy systems and real-world housing challenges. The most enjoyable part was connecting ideas across different fields and realizing that something as ordinary as a roof could be reimagined into a piece of climate technology.',
         'At the same time, the project pushed us to balance ambition with realism. It is easy to imagine a bold concept, but making sure it actually makes sense for homeowners, cost, and real-world use took repeated iteration. We spent time refining not only the technology itself, but also the business model and the way it could realistically be installed and scaled. That process pushed the idea beyond “interesting concept” into the much harder question of whether it could truly work.',
@@ -328,7 +328,7 @@ export const site = {
         logoAlt: 'Colorado School of Mines',
         logoSquare: true,
         highlights: [
-          'Selected as an incoming trainee for the SUMMET Program at Colorado School of Mines, beginning June 2026.',
+          'Selected as an incoming trainee for the Summer Mines and Engineering Training Program (SUMMET) at Colorado School of Mines, beginning June 2026.',
           'Preparing for a summer engineering and STEM immersion at a leading applied-sciences and research university.',
         ],
       },

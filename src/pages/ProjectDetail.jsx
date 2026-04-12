@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getProjectBySlug } from '../data/site.js'
 import SectionTitle from '../components/ui/SectionTitle.jsx'
@@ -21,6 +21,21 @@ export default function ProjectDetail() {
   const gallery = project?.gallery
   const hasGallery = Array.isArray(gallery) && gallery.length > 0
   const [tab, setTab] = useState('overview')
+  const [lightbox, setLightbox] = useState(null)
+
+  useEffect(() => {
+    if (!lightbox) return
+    const onKey = (e) => {
+      if (e.key === 'Escape') setLightbox(null)
+    }
+    document.addEventListener('keydown', onKey)
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = prevOverflow
+    }
+  }, [lightbox])
 
   if (!project || !detail?.length) {
     return (
@@ -257,13 +272,29 @@ export default function ProjectDetail() {
                   key={key}
                   className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 shadow-lg shadow-black/30"
                 >
-                  <img
-                    src={item.src}
-                    alt={item.alt ?? ''}
-                    loading={i < 2 ? 'eager' : 'lazy'}
-                    decoding="async"
-                    className="w-full bg-zinc-950/50"
-                  />
+                  <button
+                    type="button"
+                    onClick={() =>
+                      item.src
+                        ? setLightbox({ src: item.src, alt: item.alt ?? '' })
+                        : undefined
+                    }
+                    disabled={!item.src}
+                    className="group relative block w-full cursor-zoom-in p-0 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 disabled:cursor-default"
+                    aria-label={
+                      item.alt
+                        ? `View larger: ${item.alt}`
+                        : 'View larger gallery image'
+                    }
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.alt ?? ''}
+                      loading={i < 2 ? 'eager' : 'lazy'}
+                      decoding="async"
+                      className="w-full bg-zinc-950/50 transition-opacity enabled:group-hover:opacity-95"
+                    />
+                  </button>
                   {item.caption ? (
                     <figcaption className="border-t border-white/10 bg-zinc-950/50 px-4 py-3 text-sm leading-relaxed text-zinc-400">
                       {item.caption}
@@ -275,6 +306,33 @@ export default function ProjectDetail() {
           </div>
         )}
       </div>
+
+      {lightbox ? (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/88 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Enlarged image"
+          onClick={() => setLightbox(null)}
+        >
+          <button
+            type="button"
+            className="absolute right-3 top-3 z-[1] rounded-lg border border-white/15 bg-zinc-900/90 px-3 py-2 text-sm font-medium text-zinc-200 shadow-lg transition hover:border-white/25 hover:bg-zinc-800/90 sm:right-5 sm:top-5"
+            onClick={(e) => {
+              e.stopPropagation()
+              setLightbox(null)
+            }}
+          >
+            Close
+          </button>
+          <img
+            src={lightbox.src}
+            alt={lightbox.alt}
+            className="max-h-[min(90vh,100%)] max-w-full object-contain shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      ) : null}
     </div>
   )
 }

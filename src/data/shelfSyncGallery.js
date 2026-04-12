@@ -1,13 +1,7 @@
 import { publicUrl } from '../utils/publicUrl.js'
 
-/** ShelfSync project media — screenshots under /public/projects/shelfsync/; team photo in /public/competitions/ */
+/** ShelfSync project media — screenshots under /public/projects/shelfsync/ */
 export const shelfSyncGallery = [
-  {
-    src: publicUrl('/competitions/microsoft-divergent-teams-hackathon-atlanta-2026.png'),
-    alt: 'ShelfSync team at the Microsoft sign in Atlanta after the Microsoft Divergent Teams Hackathon',
-    caption:
-      'Microsoft Divergent Teams Hackathon (Atlanta, April 2026) — workshops on real-world models and agentic AI, first place and Sony Bluetooth headphones after pitching to leaders from Microsoft, CONA, Coca-Cola, and Equifax; nationals next at Microsoft HQ in Seattle.',
-  },
   {
     src: publicUrl('/projects/shelfsync/01-landing.png'),
     alt: 'ShelfSync landing hero — brand-subsidized dynamic pricing for independent retail, Store and Brand dashboard CTAs, and stats bar',
