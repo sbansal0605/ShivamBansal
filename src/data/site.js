@@ -322,6 +322,19 @@ export const site = {
     title: 'Experience',
     items: [
       {
+        title: 'Incoming AI Engineering Intern — Parle Technologies',
+        range: 'May 2026 - August 2026',
+        logo: publicUrl('/logos/parle-technologies.png'),
+        logoAlt: 'Parle Technologies',
+        logoSquare: true,
+        website: 'https://parletech.com/',
+        highlights: [
+          'I will be leading AI automation operations through a summer internship at Parle Technologies.',
+          'I will be leading projects for investment and healthcare companies, integrating AI to help automate business workflows.',
+          'I will be directly mentored by Georgia Institute of Technology alum Prabir Mehta.',
+        ],
+      },
+      {
         title: 'Incoming Trainee — SUMMET Program',
         range: 'Colorado School of Mines · June 2026',
         logo: publicUrl('/logos/colorado-school-of-mines.png'),

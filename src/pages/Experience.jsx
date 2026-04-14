@@ -74,6 +74,16 @@ export default function Experience() {
                   <div className="min-w-0 flex-1">
                     <h3 className="text-lg font-semibold leading-snug text-white sm:text-xl">{item.title}</h3>
                     <p className="mt-2 text-sm font-medium tracking-wide text-violet-400/95">{item.range}</p>
+                    {item.website ? (
+                      <a
+                        href={item.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-flex text-sm font-medium text-violet-300 transition hover:text-violet-200"
+                      >
+                        {item.website}
+                      </a>
+                    ) : null}
                     <ExperienceBody item={item} />
                     {item.pdf ? (
                       <a
