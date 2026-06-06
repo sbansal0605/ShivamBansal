@@ -53,7 +53,7 @@ export const site = {
     ],
     info: [
       { icon: 'location', text: 'Johns Creek, Georgia · Born & raised in Dubai, UAE' },
-      { icon: 'education', text: 'Northview High School · 11th grade' },
+      { icon: 'education', text: 'Northview High School · 12th grade - Class of 2027' },
       { icon: 'work', text: 'Student & builder' },
     ],
   },
@@ -397,7 +397,7 @@ export const site = {
   },
   education: {
     title: 'Education',
-    degree: '11th grade',
+    degree: '12th grade - Class of 2027',
     school: 'Northview High School',
     range: 'Johns Creek, Georgia',
     schoolLogo: publicUrl('/northview-logo.png'),
