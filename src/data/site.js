@@ -7,6 +7,8 @@ import { frontlineReadyGallery } from './frontlineReadyGallery.js'
 import { frontlineReadyDetailSections } from './frontlineReadyProjectDetail.js'
 import { shelfSyncGallery } from './shelfSyncGallery.js'
 import { shelfSyncDetailSections } from './shelfSyncProjectDetail.js'
+import { citadelGallery } from './citadelGallery.js'
+import { citadelDetailSections } from './citadelProjectDetail.js'
 
 export const site = {
   name: 'Shivam Bansal',
@@ -128,6 +130,16 @@ export const site = {
     },
   ],
   projects: [
+    {
+      title: 'The Citadel: Mine Rescue Emergency Planning',
+      slug: 'the-citadel',
+      description:
+        'SUMMET capstone at Colorado School of Mines—Yellow Team built The Citadel from recycled materials with Arduino IR sensors, C++ firmware, soldered battery circuits, and LEDs for remote detection, staging survival supplies underground to prolong rescue windows.',
+      href: null,
+      status: 'View More',
+      detailSections: citadelDetailSections,
+      gallery: citadelGallery,
+    },
     {
       title: 'CricketCoach: AI analysis Tool',
       slug: 'cricketcoach',
@@ -322,8 +334,15 @@ export const site = {
     title: 'Experience',
     items: [
       {
-        title: 'Incoming AI Engineering Intern — Parle Technologies',
-        range: 'May 2026 - August 2026',
+        title: 'Incoming Development Team Intern',
+        range: 'DiversiTech · Aug 2026 - Dec 2026',
+        logo: publicUrl('/logos/diversitech.png'),
+        logoAlt: 'DiversiTech',
+        website: 'https://www.diversitech.com/',
+      },
+      {
+        title: 'AI Engineering Intern',
+        range: 'Parle Technologies · Jun 2026 - Aug 2026',
         logo: publicUrl('/logos/parle-technologies.png'),
         logoAlt: 'Parle Technologies',
         logoSquare: true,
@@ -335,18 +354,22 @@ export const site = {
         ],
       },
       {
-        title: 'Incoming Trainee — SUMMET Program',
-        range: 'Colorado School of Mines · June 2026',
+        title: 'Summer Mines Engineering and Training Program (SUMMET) Trainee',
+        range: 'Colorado School of Mines · Jun 2026',
         logo: publicUrl('/logos/colorado-school-of-mines.png'),
         logoAlt: 'Colorado School of Mines',
         logoSquare: true,
         highlights: [
-          'Selected as an incoming trainee for the Summer Mines and Engineering Training Program (SUMMET) at Colorado School of Mines, beginning June 2026.',
-          'Preparing for a summer engineering and STEM immersion at a leading applied-sciences and research university.',
+          'Accepted into the fully expense-paid Summer Mines and Engineering Training Program (SUMMET) at Colorado School of Mines—a selective one-week residential program with a 13% acceptance rate.',
+          'Participated in hands-on workshops across mechanical engineering (Arduino and CTLM), electrical engineering, chemical and biological engineering, physics, quantitative biosciences and engineering, and 3D printing, including soldering and prototyping labs, and toured the Edgar Experimental Mine.',
+          'Learned directly from Colorado School of Mines professors across mechanical, electrical, chemical and biological, and quantitative biosciences engineering, as well as physics.',
+          'Built and presented a week-long capstone project, The Citadel, on mine rescue—prototyping with recycled materials, Arduinos programmed in C++, IR sensors and LEDs for remote detection, and hand-soldered battery circuits to improve trapped miners\' access to survival necessities and prolong rescue windows.',
+          'Developed collaboration, networking, research, prototyping, and presentation skills while working on a diverse team of students from across the country.',
+          'Earned guaranteed undergraduate admission to Colorado School of Mines for the 2027 application cycle, with acceptance to any major of choice.',
         ],
       },
       {
-        title: 'Participant — Rice University Precollege Program (Computer Engineering)',
+        title: 'Trainee — Precollege Program (Computer Engineering)',
         range: 'Rice University · Dec 2025',
         logo: publicUrl('/logos/rice.png'),
         logoAlt: 'Rice University',
@@ -358,7 +381,7 @@ export const site = {
         pdf: publicUrl('/certificates/rice-university-precollege-completion-certificate.pdf'),
       },
       {
-        title: 'Trainee — Honeywell Leadership Challenge Academy',
+        title: 'Honeywell Leadership Challenge Academy (HLCA)',
         range: 'US Space and Rocket Center, Alabama · Oct 2025',
         logo: publicUrl('/logos/honeywell.png'),
         logoAlt: 'Honeywell',

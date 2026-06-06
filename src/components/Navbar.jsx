@@ -68,10 +68,20 @@ export default function Navbar() {
     setOpen(false)
   }
 
+  const onBrandClick = (e) => {
+    setOpen(false)
+    if (onHome) {
+      e.preventDefault()
+      scrollToId('home')
+      setActiveId('home')
+      if (location.hash) navigate('/', { replace: true })
+    }
+  }
+
   return (
     <header className="fixed left-0 right-0 top-0 z-40 px-4 pt-4 sm:px-6 lg:px-8">
       <nav className="relative mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 py-3 shadow-lg shadow-black/40 backdrop-blur-md sm:px-6">
-        <Link to="/" className="text-lg font-semibold text-white" onClick={() => setOpen(false)}>
+        <Link to="/" className="text-lg font-semibold text-white" onClick={onBrandClick}>
           {site.brand}
         </Link>
 

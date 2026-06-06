@@ -4,6 +4,7 @@ import GlassCard from '../components/ui/GlassCard.jsx'
 
 function ExperienceBody({ item }) {
   const lines = item.highlights ?? (item.description ? [item.description] : [])
+  if (lines.length === 0) return null
   return (
     <ul className="mt-5 max-w-prose space-y-3.5 text-[0.9375rem] leading-relaxed text-zinc-400">
       {lines.map((line) => (
