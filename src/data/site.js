@@ -44,7 +44,7 @@ export const site = {
   about: {
     title: 'About Me',
     /** Photo shown only in the About section (home masthead uses `profileImage`). */
-    profileImage: publicUrl('/shivam-about.png'),
+    profileImage: publicUrl('/shivam-about-suit.png'),
     journeyTitle: 'My Journey',
     journeyParagraphs: [
       'I have always been fascinated by how code turns into real-world solutions—computer science became my passion from my first “Hello World.” To me, programming is a way to express myself and build something unique; the blend of creativity, problem-solving, and critical thinking is what feels distinctive about the field.',
