@@ -42,7 +42,7 @@ export default function About() {
               <img
                 src={about.profileImage}
                 alt={site.name}
-                className="h-full min-h-[18rem] w-full object-cover object-[center_28%] sm:min-h-[22rem] lg:min-h-full lg:aspect-auto"
+                className="h-full min-h-[18rem] w-full object-cover object-center sm:min-h-[22rem] lg:min-h-full lg:aspect-auto"
               />
             </div>
           </figure>
