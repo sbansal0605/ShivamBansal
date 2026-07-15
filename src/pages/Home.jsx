@@ -20,7 +20,7 @@ export default function Home() {
               <img
                 src={site.profileImage}
                 alt={site.name}
-                className="h-[5.5rem] w-[5.5rem] rounded-full border border-white/10 object-cover object-top shadow-inner sm:h-32 sm:w-32"
+                className="h-[5.5rem] w-[5.5rem] rounded-full border border-white/10 object-cover object-[center_18%] shadow-inner sm:h-32 sm:w-32"
               />
             </div>
           </div>

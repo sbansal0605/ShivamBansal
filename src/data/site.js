@@ -22,7 +22,7 @@ export const site = {
     'I like learning new ML ideas',
     'Open to internships & collabs',
   ],
-  profileImage: publicUrl('/shivam-profile.png'),
+  profileImage: publicUrl('/shivam-profile-formal.png'),
   /** Navbar: `sectionId` = hash on `/`; `path` = separate route. */
   nav: [
     { label: 'Home', sectionId: 'home' },
@@ -34,7 +34,7 @@ export const site = {
   contactSectionId: 'contact',
   contactNavLabel: 'Contact me',
   social: {
-    github: 'https://github.com',
+    github: 'https://github.com/sbansal0605',
     linkedin: 'https://www.linkedin.com/in/shivam-bansal-58223a379/',
     email: 'shivambansal0605@gmail.com',
     phone: '+14709896893',
@@ -409,7 +409,7 @@ export const site = {
     socialLinks: [
       { label: 'Email', href: 'mailto:shivambansal0605@gmail.com', icon: 'mail' },
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/shivam-bansal-58223a379/', icon: 'linkedin' },
-      { label: 'GitHub', href: 'https://github.com', icon: 'github' },
+      { label: 'GitHub', href: 'https://github.com/sbansal0605', icon: 'github' },
     ],
   },
 }
