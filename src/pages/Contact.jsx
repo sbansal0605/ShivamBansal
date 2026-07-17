@@ -64,7 +64,7 @@ export default function Contact() {
       return
     }
     const subject = encodeURIComponent(`Portfolio message from ${form.name}`)
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)
+    const body = encodeURIComponent(`${form.message}\n\n- ${form.name} (${form.email})`)
     window.location.href = `mailto:${site.social.email}?subject=${subject}&body=${body}`
     setStatus('Opening your email client…')
   }

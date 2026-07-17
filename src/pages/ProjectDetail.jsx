@@ -270,8 +270,20 @@ export default function ProjectDetail() {
               return (
                 <figure
                   key={key}
-                  className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 shadow-lg shadow-black/30"
+                  className={[
+                    'overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 shadow-lg shadow-black/30',
+                    item.wide ? 'lg:col-span-2' : '',
+                  ]
+                    .filter(Boolean)
+                    .join(' ')}
                 >
+                  {item.title ? (
+                    <div className="border-b border-white/10 bg-zinc-950/50 px-4 py-3">
+                      <p className="text-sm font-semibold tracking-wide text-violet-300/95 sm:text-base">
+                        {item.title}
+                      </p>
+                    </div>
+                  ) : null}
                   <button
                     type="button"
                     onClick={() =>

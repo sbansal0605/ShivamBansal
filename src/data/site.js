@@ -9,6 +9,8 @@ import { shelfSyncGallery } from './shelfSyncGallery.js'
 import { shelfSyncDetailSections } from './shelfSyncProjectDetail.js'
 import { citadelGallery } from './citadelGallery.js'
 import { citadelDetailSections } from './citadelProjectDetail.js'
+import { beaverAiGallery } from './beaverAiGallery.js'
+import { beaverAiDetailSections } from './beaverAiProjectDetail.js'
 
 export const site = {
   name: 'Shivam Bansal',
@@ -47,9 +49,9 @@ export const site = {
     profileImage: publicUrl('/shivam-about-suit.png'),
     journeyTitle: 'My Journey',
     journeyParagraphs: [
-      'I have always been fascinated by how code turns into real-world solutions—computer science became my passion from my first “Hello World.” To me, programming is a way to express myself and build something unique; the blend of creativity, problem-solving, and critical thinking is what feels distinctive about the field.',
-      'Computer science never sits still—there is always something new to invent or improve. With machine learning, I am especially drawn to systems that learn from data and adapt on their own. Working on projects over the years has taught me that here, there is always more to learn.',
-      'Long term, I aim to become an innovative data scientist who pairs rigorous data work with AI engineering—so models and pipelines turn into tools people actually use, not just slides. I want to apply that in my community: helping schools and local organizations make better use of data, and building solutions that address real inequities and everyday problems. That goal pushes me to deepen statistics and machine learning while I keep shipping full-stack projects that make analysis actionable.',
+      'I have always been fascinated by how code turns into real-world solutions. Computer science became my passion from my first “Hello World.” To me, programming is a way to express myself and build something unique; the blend of creativity, problem-solving, and critical thinking is what feels distinctive about the field.',
+      'Computer science never sits still. There is always something new to invent or improve. With machine learning, I am especially drawn to systems that learn from data and adapt on their own. Working on projects over the years has taught me that here, there is always more to learn.',
+      'Long term, I aim to become an innovative data scientist who pairs rigorous data work with AI engineering so models and pipelines turn into tools people actually use, not just slides. I want to apply that in my community: helping schools and local organizations make better use of data, and building solutions that address real inequities and everyday problems. That goal pushes me to deepen statistics and machine learning while I keep shipping full-stack projects that make analysis actionable.',
     ],
     info: [
       { icon: 'location', text: 'Johns Creek, Georgia · Born & raised in Dubai, UAE' },
@@ -89,7 +91,7 @@ export const site = {
       pdf: publicUrl('/certificates/python-course-completion-certificate.pdf'),
     },
     {
-      title: "Certificate — BYJU'S Coding",
+      title: "Certificate: BYJU'S Coding",
       issuer: "BYJU'S",
       year: '',
       pdf: publicUrl('/certificates/certificate-byjus-coding.pdf'),
@@ -131,29 +133,40 @@ export const site = {
   ],
   projects: [
     {
+      title: 'Beaver AI: Operations Intelligence for Buc-ee’s',
+      slug: 'beaver-ai',
+      description:
+        'Cisco High School Capstone: an operations OS for Buc-ee’s travel centers that predicts demand, cuts food waste, optimizes staffing, and secures AI decisions with Cisco AI Defense.',
+      href: null,
+      status: 'View More',
+      detailSections: beaverAiDetailSections,
+      gallery: beaverAiGallery,
+    },
+    {
       title: 'The Citadel: Mine Rescue Emergency Planning',
       slug: 'the-citadel',
       description:
-        'SUMMET capstone at Colorado School of Mines—Yellow Team built The Citadel from recycled materials with Arduino IR sensors, C++ firmware, soldered battery circuits, and LEDs for remote detection, staging survival supplies underground to prolong rescue windows.',
+        'SUMMET capstone at Colorado School of Mines: a recycled-material mine rescue station with Arduino IR sensors, C++ firmware, soldered circuits, and LEDs for remote detection.',
       href: null,
       status: 'View More',
       detailSections: citadelDetailSections,
       gallery: citadelGallery,
     },
     {
-      title: 'CricketCoach: AI analysis Tool',
+      title: 'CricketCoach: AI Cricket Analysis',
       slug: 'cricketcoach',
-      description: 'AI-powered analysis for cricket coaching—technique, performance, and actionable feedback.',
+      description:
+        'AI-powered cricket coaching analysis: technique, performance metrics, and actionable feedback for players and coaches.',
       href: null,
       status: 'View More',
       detailSections: cricketCoachDetailSections,
       gallery: cricketCoachGallery,
     },
     {
-      title: 'FrontlineReady: Empowering frontline workers to help the economy',
+      title: 'FrontlineReady: AI Coaching for Frontline Workers',
       slug: 'frontlineready',
       description:
-        'AI-assisted rehearsal for frontline workers—Gemini-powered scenarios, speech-aware coaching, and an AccentCoach narrative built for MLH Cyberwave × Reach Capital.',
+        'Gemini-powered rehearsal for frontline workers: speech-aware coaching and AccentCoach scenarios built for MLH Cyberwave × Reach Capital.',
       href: null,
       status: 'View More',
       detailSections: frontlineReadyDetailSections,
@@ -163,17 +176,17 @@ export const site = {
       title: 'AaboPay: Securing Payments in Nigeria',
       slug: 'aabopay',
       description:
-        'A trust-first companion concept for Nigerian mobile money—voice verification, BVN/NIN safeguards, multilingual UI, and USSD trust cues; finalist at KSU FinTech.',
+        'Trust-first mobile money companion for Nigeria: voice verification, BVN/NIN safeguards, multilingual UI, and USSD trust cues; KSU FinTech finalist.',
       href: null,
       status: 'View More',
       detailSections: aabopayDetailSections,
       gallery: aabopayGallery,
     },
     {
-      title: 'ShelfSync: Brand-Subsidized Dynamic Pricing for Independent Retailers',
+      title: 'ShelfSync: Brand-Subsidized Dynamic Pricing',
       slug: 'shelfsync',
       description:
-        'A real-time dynamic pricing platform where CPG brands fund discounts for bodegas and corner stores—shoppers pay less, stores keep full margin, and brands move inventory and reduce waste. First place at the Microsoft Divergent Teams Hackathon (Atlanta 2026) with Sony Bluetooth headphones; we pitched to leaders from Microsoft, CONA, Coca-Cola, and Equifax and advanced to nationals at Microsoft HQ in Seattle.',
+        'Real-time dynamic pricing where CPG brands fund discounts for independent retailers. 1st place at the Microsoft Divergent Teams Hackathon (Atlanta 2026).',
       href: null,
       status: 'View More',
       detailSections: shelfSyncDetailSections,
@@ -195,16 +208,16 @@ export const site = {
       result: '1st place',
       projectName: 'ShelfSync',
       summary:
-        'Microsoft Divergent Teams Hackathon, Atlanta (April 2026)—workshops on real-world ML models and agentic AI, then a final pitch of ShelfSync to senior engineers and VPs from Microsoft, CONA, Coca-Cola, and Equifax. First place and Sony Bluetooth headphones; next stop is Microsoft headquarters in Seattle for the national round.',
+        'Microsoft Divergent Teams Hackathon, Atlanta (April 2026): workshops on real-world ML models and agentic AI, then a final pitch of ShelfSync to senior engineers and VPs from Microsoft, CONA, Coca-Cola, and Equifax. First place and Sony Bluetooth headphones; next stop is Microsoft headquarters in Seattle for the national round.',
       image: publicUrl('/competitions/microsoft-divergent-teams-hackathon-atlanta-2026.png'),
       imageAlt:
         'Two teammates in front of the Microsoft campus sign in Atlanta after the Divergent Teams Hackathon, with an ATLANTA banner and CONA Services tote.',
       body: [
-        'The Microsoft Divergent Teams Hackathon in Atlanta (April 2026) paired intensive building time with sponsor-led learning. I was on a team with students from Innovation Academy and Northview High School. We attended workshops on how production systems use real-world models at scale and on agentic AI—autonomous, tool-using workflows that plan, call APIs, and adapt—so our weekend work sat in the same vocabulary senior engineers use when they ship.',
-        'ShelfSync is a brand-subsidized dynamic pricing concept for independent retailers: CPG companies fund discounts in real time so shoppers pay less, bodegas and corner stores keep full retail margin, and brands move inventory and cut waste. The demo spans a store portal (live dashboards, inventory with expiry and subsidy badges, POS deals, invoice-style analytics, scripted assistant flows) and a brand portal (campaign builder, billing, ESG impact, Monte Carlo–style simulator), tied together with trigger logic for weather, velocity, expiry, and local events—plus demo mode so judges could feel heatwave and expiry storylines in one sitting.',
-        'Final presentations were in front of industry leaders—senior engineers and vice presidents from Microsoft, CONA, Coca-Cola, and Equifax—not a student-only room. We walked them through the dual-sided marketplace, how subsidies protect store margin, and how the prototype’s Next.js, TypeScript, streaming feeds, and rules narrative could evolve toward production.',
+        'The Microsoft Divergent Teams Hackathon in Atlanta (April 2026) paired intensive building time with sponsor-led learning. I was on a team with students from Innovation Academy and Northview High School. We attended workshops on how production systems use real-world models at scale and on agentic AI (autonomous, tool-using workflows that plan, call APIs, and adapt), so our weekend work sat in the same vocabulary senior engineers use when they ship.',
+        'ShelfSync is a brand-subsidized dynamic pricing concept for independent retailers: CPG companies fund discounts in real time so shoppers pay less, bodegas and corner stores keep full retail margin, and brands move inventory and cut waste. The demo spans a store portal (live dashboards, inventory with expiry and subsidy badges, POS deals, invoice-style analytics, scripted assistant flows) and a brand portal (campaign builder, billing, ESG impact, Monte Carlo–style simulator), tied together with trigger logic for weather, velocity, expiry, and local events, plus demo mode so judges could feel heatwave and expiry storylines in one sitting.',
+        'Final presentations were in front of industry leaders, including senior engineers and vice presidents from Microsoft, CONA, Coca-Cola, and Equifax, not a student-only room. We walked them through the dual-sided marketplace, how subsidies protect store margin, and how the prototype’s Next.js, TypeScript, streaming feeds, and rules narrative could evolve toward production.',
         'That pitch earned first place at the regional event. We also took home Sony Bluetooth headphones as part of the win and qualified for the national level of the competition.',
-        'The national round will bring us to Microsoft headquarters in Seattle, where we will participate in the next phase of the Divergent Teams Hackathon against other regional winners—carrying the same ShelfSync story from Atlanta to the main campus.',
+        'The national round will bring us to Microsoft headquarters in Seattle, where we will participate in the next phase of the Divergent Teams Hackathon against other regional winners, carrying the same ShelfSync story from Atlanta to the main campus.',
       ],
       videoUrl: null,
       links: [],
@@ -217,15 +230,15 @@ export const site = {
       result: '1st place · Web & Mobile Apps',
       projectName: 'CricketCoach',
       summary:
-        'State-level GASTC in March 2026—Evan Saran from Northview and I entered Web & Mobile Apps with CricketCoach, an AI analysis tool for cricket coaching, and earned 1st place.',
+        'State-level GASTC in March 2026: Evan Saran from Northview and I entered Web & Mobile Apps with CricketCoach, an AI analysis tool for cricket coaching, and earned 1st place.',
       image: publicUrl('/competitions/gastc-cricketcoach-2026.png'),
       imageAlt:
         'GASTC 25th anniversary stage: team with medals after winning 1st place in Web & Mobile Apps for CricketCoach.',
       body: [
-        'GASTC’s Web & Mobile Applications track rewards software you can explain, inspect, and run live—exactly how we pitched CricketCoach. Cricket is massive globally yet hard to grow in the U.S. partly because elite coaching is scarce and expensive; many players cite cost and distance as the barriers to even starting. Evan Saran and I built CricketCoach at Northview High School as a computer-vision pipeline that turns a short phone or laptop upload into personalized coaching feedback on form and positioning—so a player far from an academy still gets structured guidance. We both play school and club cricket and have represented Georgia at the interstate conference, so the problem and demo came from lived experience, not a hypothetical slide story.',
-        'Our walkthrough matched the script judges saw at state: sign-in, upload a roughly three- to eight-second clip, explicitly pick side or front camera geometry because accuracy collapses without that context, then analyze. The UI stays transparent—loading states, confidence warnings, and dashboards tuned for beginners through advanced users. After analysis, a pose-overlay replay sketches the skeleton our model tracks; coach tips call out the biggest mechanical priorities. A color-coded Metrics Snapshot translates head stability, knee angle, stride, and alignment into coaching language, while the Kinematic Sequence charts how power should flow pelvis → torso → shoulder → wrist and surfaces timing issues. For bowling we surface biomechanical risk cues such as mixed-action patterns tied to stress, mirror warnings when frames are missing, and exports so athletes can e-mail a report to a remote coach. Profiles personalize feedback, the runs log ties each upload to an account, and benchmarks compare progress once five linked sessions exist.',
-        'We argued the same story we believe on the field: high-quality analysis should be free at the point of use and reachable with everyday devices. Our presentation highlighted academy partners and teammates—including Northview players who cannot access private lessons—using the workflow in real practices, and we connected that adoption to our silver-medal finish at the Georgia High School Cricket Tournament. The broader point is closing the coaching gap for anyone limited by money, geography, or schedule.',
-        'Under the hood, a FastAPI and Python service wraps MediaPipe pose estimation, NumPy/OpenCV geometry, DTW alignment against pro reference clips for ghost overlays, and SQLite-backed run metadata, while the Next.js/React/TypeScript/Tailwind client handles routing, Recharts kinematic plots, mobile capture via getUserMedia/MediaRecorder, and bilingual UI scaffolding. That stack let us open code, narrate design trade-offs, and drive a live browser demo end-to-end—the bar GASTC sets for Web & Mobile—and first place in March 2026 affirmed that judges bought both the mission and the engineering.',
+        'GASTC’s Web & Mobile Applications track rewards software you can explain, inspect, and run live, exactly how we pitched CricketCoach. Cricket is massive globally yet hard to grow in the U.S. partly because elite coaching is scarce and expensive; many players cite cost and distance as the barriers to even starting. Evan Saran and I built CricketCoach at Northview High School as a computer-vision pipeline that turns a short phone or laptop upload into personalized coaching feedback on form and positioning, so a player far from an academy still gets structured guidance. We both play school and club cricket and have represented Georgia at the interstate conference, so the problem and demo came from lived experience, not a hypothetical slide story.',
+        'Our walkthrough matched the script judges saw at state: sign-in, upload a roughly three- to eight-second clip, explicitly pick side or front camera geometry because accuracy collapses without that context, then analyze. The UI stays transparent: loading states, confidence warnings, and dashboards tuned for beginners through advanced users. After analysis, a pose-overlay replay sketches the skeleton our model tracks; coach tips call out the biggest mechanical priorities. A color-coded Metrics Snapshot translates head stability, knee angle, stride, and alignment into coaching language, while the Kinematic Sequence charts how power should flow pelvis → torso → shoulder → wrist and surfaces timing issues. For bowling we surface biomechanical risk cues such as mixed-action patterns tied to stress, mirror warnings when frames are missing, and exports so athletes can e-mail a report to a remote coach. Profiles personalize feedback, the runs log ties each upload to an account, and benchmarks compare progress once five linked sessions exist.',
+        'We argued the same story we believe on the field: high-quality analysis should be free at the point of use and reachable with everyday devices. Our presentation highlighted academy partners and teammates, including Northview players who cannot access private lessons, using the workflow in real practices, and we connected that adoption to our silver-medal finish at the Georgia High School Cricket Tournament. The broader point is closing the coaching gap for anyone limited by money, geography, or schedule.',
+        'Under the hood, a FastAPI and Python service wraps MediaPipe pose estimation, NumPy/OpenCV geometry, DTW alignment against pro reference clips for ghost overlays, and SQLite-backed run metadata, while the Next.js/React/TypeScript/Tailwind client handles routing, Recharts kinematic plots, mobile capture via getUserMedia/MediaRecorder, and bilingual UI scaffolding. That stack let us open code, narrate design trade-offs, and drive a live browser demo end-to-end (the bar GASTC sets for Web & Mobile), and first place in March 2026 affirmed that judges bought both the mission and the engineering.',
       ],
       videoUrl: null,
       links: [],
@@ -238,15 +251,15 @@ export const site = {
       result: 'Finalist · Top 10',
       projectName: 'AaboPay',
       summary:
-        'Kennesaw State University’s one-day high school FinTech challenge focused on safer mobile payments in Africa—we built AaboPay around a real Nigerian payments context with Alvin (Forsyth Central), Bala (Lambert High), and Allen (West Forsyth), earned finalist, and finished in the top 10.',
+        'Kennesaw State University’s one-day high school FinTech challenge focused on safer mobile payments in Africa. We built AaboPay around a real Nigerian payments context with Alvin (Forsyth Central), Bala (Lambert High), and Allen (West Forsyth), earned finalist, and finished in the top 10.',
       image: publicUrl('/competitions/ksu-fintech-hackathon.png'),
       imageAlt:
         'Team photo with KSU mascot Scrappy the Owl at the FinTech hackathon; celebrating a top-10 finish.',
       body: [
-        'Hosted at Kennesaw State University, the FinTech High School Hackathon asked teams to pick an African country or mobile-money market, research a genuine payment challenge, and in a single day design something that makes mobile payments safer, easier, and more accessible—then explain and demo it clearly. The official theme was safer mobile payments across Africa, with emphasis on practical ideas judges could understand from a prototype, mockup, or interactive demo plus a concise concept brief.',
-        'The brief pushed us to name who we were designing for, surface at least two real fraud or security pains (from SIM swaps and scam messages to fake agents, stolen phones, or false confirmations), and shape a solution that could take the form of an app, SMS/USSD flow, agent verification, or fraud-detection concept—while staying mindful of regulation and consumer protection. Two constraints stood out: the product had to stay usable when connectivity drops, and it had to work for people with limited literacy through plain language, icons, voice, or guided steps.',
-        'Judges circulated during the event to ask questions, probe our thinking, and see how we responded to surprise challenges—so progress and teamwork mattered as much as the final deck. We closed with a ten-minute pitch covering our country and users, the security problem, how the solution works, a sample journey, and why the idea was simple, practical, and scalable—the same storyline we refined through morning research, midday building, and afternoon presentations.',
-        'I worked alongside Alvin from Forsyth Central, Bala from Lambert High, and Allen from West Forsyth. We presented AaboPay as a real-time companion to Nigerian wallets like OPay and PalmPay—phone trust checks, voice-verified payments, BVN/NIN-backed safeguards, and a demo path where a suspicious agent number triggers pause, warning, and cancel before money moves. Color-coded trust signals, icon navigation, English with Yoruba and Igbo, voice confirmations, and USSD access to trust scores without internet spoke directly to the brief’s low-literacy and offline requirements, grounded in Nigeria’s documented fraud losses and NIBSS-scale payment data. Finalist recognition and a top-ten finish showed judges connected with that problem-to-prototype story.',
+        'Hosted at Kennesaw State University, the FinTech High School Hackathon asked teams to pick an African country or mobile-money market, research a genuine payment challenge, and in a single day design something that makes mobile payments safer, easier, and more accessible, then explain and demo it clearly. The official theme was safer mobile payments across Africa, with emphasis on practical ideas judges could understand from a prototype, mockup, or interactive demo plus a concise concept brief.',
+        'The brief pushed us to name who we were designing for, surface at least two real fraud or security pains (from SIM swaps and scam messages to fake agents, stolen phones, or false confirmations), and shape a solution that could take the form of an app, SMS/USSD flow, agent verification, or fraud-detection concept, while staying mindful of regulation and consumer protection. Two constraints stood out: the product had to stay usable when connectivity drops, and it had to work for people with limited literacy through plain language, icons, voice, or guided steps.',
+        'Judges circulated during the event to ask questions, probe our thinking, and see how we responded to surprise challenges, so progress and teamwork mattered as much as the final deck. We closed with a ten-minute pitch covering our country and users, the security problem, how the solution works, a sample journey, and why the idea was simple, practical, and scalable: the same storyline we refined through morning research, midday building, and afternoon presentations.',
+        'I worked alongside Alvin from Forsyth Central, Bala from Lambert High, and Allen from West Forsyth. We presented AaboPay as a real-time companion to Nigerian wallets like OPay and PalmPay: phone trust checks, voice-verified payments, BVN/NIN-backed safeguards, and a demo path where a suspicious agent number triggers pause, warning, and cancel before money moves. Color-coded trust signals, icon navigation, English with Yoruba and Igbo, voice confirmations, and USSD access to trust scores without internet spoke directly to the brief’s low-literacy and offline requirements, grounded in Nigeria’s documented fraud losses and NIBSS-scale payment data. Finalist recognition and a top-ten finish showed judges connected with that problem-to-prototype story.',
       ],
       videoUrl: null,
       links: [],
@@ -259,7 +272,7 @@ export const site = {
       result: 'Finalists · 3rd in the world (bronze)',
       projectName: "Compiler's Collective",
       summary:
-        "MIT Zero Robotics High School Tournament (Feb 2026)—as Compiler's Collective on Alliance 10 with teammates in Greece, Madison Highland Prep, and Northview, we reached the ISS finals broadcast and placed third in the world.",
+        "MIT Zero Robotics High School Tournament (Feb 2026): as Compiler's Collective on Alliance 10 with teammates in Greece, Madison Highland Prep, and Northview, we reached the ISS finals broadcast and placed third in the world.",
       image: publicUrl('/competitions/zero-robotics-compilers-collective.png'),
       imageAlt:
         "Compiler's Collective team logo: Zero Robotics crest with space-themed robot mark.",
@@ -267,14 +280,14 @@ export const site = {
         {
           src: publicUrl('/competitions/zero-robotics-tournament-bracket.png'),
           alt: 'MIT Zero Robotics high school tournament bracket showing Alliance 10 through winners, redemption, and finals to third place.',
-          caption: 'High School Tournament bracket — Alliance 10’s path to 3rd place worldwide',
+          caption: 'High School Tournament bracket: Alliance 10’s path to 3rd place worldwide',
         },
       ],
       body: [
-        'MIT Zero Robotics is built around SPHERES satellites and a new challenge every season. Teams write autonomous code to command satellite speed, rotation, and direction—navigating obstacles, collecting virtual targets, and budgeting fuel and power. After virtual rounds hosted on the program’s site, a smaller set of finalists advances to a live championship aboard the International Space Station: an astronaut runs student programs in real microgravity while the world watches a live broadcast, with no manual piloting allowed once execution starts.',
-        'Day to day you iterate in a simulator that mirrors flight-like constraints, stress-testing strategies before any hardware touches orbit. The High School Tournament serves grades 9–12, runs internationally from September through December each year, and is free to enter for U.S. teams and schools in European Space Agency member states—so the bracket mixes time zones, rule interpretations, and engineering cultures long before finals week.',
-        "Our alliance—Alliance 10—combined students from Greece, Madison Highland Prep, and Northview High School under the Compiler's Collective identity we brought to judges and partners. Coordinating across those schools meant shared repositories, synchronized test plans, and clear handoffs between simulation sprints and integration lockdowns.",
-        'Earning finalist status and bronze—third place worldwide—in February 2026 capped a season where our autonomous stack had to survive both digital leaderboards and the ultimate hardware check on ISS. The outcome reinforced how I scope risk, document interfaces, and communicate under deadlines when teammates are continents apart.',
+        'MIT Zero Robotics is built around SPHERES satellites and a new challenge every season. Teams write autonomous code to command satellite speed, rotation, and direction: navigating obstacles, collecting virtual targets, and budgeting fuel and power. After virtual rounds hosted on the program’s site, a smaller set of finalists advances to a live championship aboard the International Space Station: an astronaut runs student programs in real microgravity while the world watches a live broadcast, with no manual piloting allowed once execution starts.',
+        'Day to day you iterate in a simulator that mirrors flight-like constraints, stress-testing strategies before any hardware touches orbit. The High School Tournament serves grades 9–12, runs internationally from September through December each year, and is free to enter for U.S. teams and schools in European Space Agency member states, so the bracket mixes time zones, rule interpretations, and engineering cultures long before finals week.',
+        "Our alliance, Alliance 10, combined students from Greece, Madison Highland Prep, and Northview High School under the Compiler's Collective identity we brought to judges and partners. Coordinating across those schools meant shared repositories, synchronized test plans, and clear handoffs between simulation sprints and integration lockdowns.",
+        'Earning finalist status and bronze (third place worldwide) in February 2026 capped a season where our autonomous stack had to survive both digital leaderboards and the ultimate hardware check on ISS. The outcome reinforced how I scope risk, document interfaces, and communicate under deadlines when teammates are continents apart.',
       ],
       videoUrl: null,
       links: [],
@@ -287,15 +300,15 @@ export const site = {
       result: '1st Place',
       projectName: 'FrontlineReady',
       summary:
-        'February 2026 MLH Cyberwave with Reach Capital—Evan Saran from Northview and I took 1st place with FrontlineReady, using our AccentCoach slides to show accent clarity, realistic customer scenarios, and Gemini-powered coaching for frontline workers; we also received Logitech Brio 101 webcams.',
+        'February 2026 MLH Cyberwave with Reach Capital: Evan Saran from Northview and I took 1st place with FrontlineReady, using our AccentCoach slides to show accent clarity, realistic customer scenarios, and Gemini-powered coaching for frontline workers; we also received Logitech Brio 101 webcams.',
       image: publicUrl('/competitions/mlh-cyberwave-frontlineready-win.png'),
       imageAlt:
         'Shivam and Evan Saran holding Logitech Brio 101 webcam boxes after winning first place at the MLH Cyberwave hackathon.',
       body: [
-        'Cyberwave featured a Reach Capital × Major League Hacking prompt anchored in the future of work, introduced to participants by Reach Capital partner Wai Chu. The firm invests across education, the future of work, and healthcare—including companies such as Replit, GPTZero, ClassDojo, and MLH—and challenged hackers to design AI learning experiences for frontline staff who are often last in line for new workplace technology. The brief was explicit: uplevel and upskill the labor force rather than replace it, with tools that work on the job and on the go inside day-to-day workflows.',
-        'Our slides grounded the story in U.S. labor reality: roughly 70% of the American workforce is frontline-based, national frontline unemployment had recently jumped to about 4.5%, and tens of millions of workers use English as a second language while customers still report disappointing service experiences. Hiring managers, meanwhile, face a persistent training and staffing gap—exactly the kind of “future of work” friction Reach Capital asked us to address with AI that supports people instead of sidelining them.',
-        'The submission remained FrontlineReady, but the deck’s AccentCoach narrative explained why customer conversations matter—safety, trust, tips, reviews, and advancement—and why the hardest moments are staying clear under stress. We pitched a private, low-cost way to rehearse realistic service scenarios rather than generic language drills: specialized for retail-style frontline roles, an easy-to-read UI, and a story about accessibility without stacking subscriptions or paid APIs on top of workers who are already stretched thin.',
-        'Technically we showcased how Gemini could power real-time speech understanding, dynamically generated “mistake” scenarios, bite-sized personalized coaching, customer-role impersonation, and multimodal reasoning so feedback felt contextual—not a one-size lecture. Evan Saran from Northview High School and I ran the weekend like a product sprint, stitched the demo to that storyline, and closed with judges in a place where Reach’s mandate met something frontline staff could imagine using between tasks. First place—and Logitech Brio 101 webcams—was the cherry on top.',
+        'Cyberwave featured a Reach Capital × Major League Hacking prompt anchored in the future of work, introduced to participants by Reach Capital partner Wai Chu. The firm invests across education, the future of work, and healthcare, including companies such as Replit, GPTZero, ClassDojo, and MLH, and challenged hackers to design AI learning experiences for frontline staff who are often last in line for new workplace technology. The brief was explicit: uplevel and upskill the labor force rather than replace it, with tools that work on the job and on the go inside day-to-day workflows.',
+        'Our slides grounded the story in U.S. labor reality: roughly 70% of the American workforce is frontline-based, national frontline unemployment had recently jumped to about 4.5%, and tens of millions of workers use English as a second language while customers still report disappointing service experiences. Hiring managers, meanwhile, face a persistent training and staffing gap, exactly the kind of “future of work” friction Reach Capital asked us to address with AI that supports people instead of sidelining them.',
+        'The submission remained FrontlineReady, but the deck’s AccentCoach narrative explained why customer conversations matter (safety, trust, tips, reviews, and advancement) and why the hardest moments are staying clear under stress. We pitched a private, low-cost way to rehearse realistic service scenarios rather than generic language drills: specialized for retail-style frontline roles, an easy-to-read UI, and a story about accessibility without stacking subscriptions or paid APIs on top of workers who are already stretched thin.',
+        'Technically we showcased how Gemini could power real-time speech understanding, dynamically generated “mistake” scenarios, bite-sized personalized coaching, customer-role impersonation, and multimodal reasoning so feedback felt contextual, not a one-size lecture. Evan Saran from Northview High School and I ran the weekend like a product sprint, stitched the demo to that storyline, and closed with judges in a place where Reach’s mandate met something frontline staff could imagine using between tasks. First place, and Logitech Brio 101 webcams, was the cherry on top.',
       ],
       videoUrl: null,
       links: [],
@@ -308,7 +321,7 @@ export const site = {
       result: 'Top 500',
       projectName: null,
       summary:
-        'Blue Ocean Entrepreneurship Challenge — placed in the Top 500, recognized for advancing through the competition with an entrepreneurship-focused submission.',
+        'Blue Ocean Entrepreneurship Challenge: placed in the Top 500, recognized for advancing through the competition with an entrepreneurship-focused submission.',
       image: publicUrl('/competitions/blue-ocean-top-500.png'),
       imageAlt:
         'Blue Ocean Competition Top 500 recognition graphic for ThermaScales, listing team members, schools, and USA.',
@@ -341,6 +354,18 @@ export const site = {
         website: 'https://www.diversitech.com/',
       },
       {
+        title: 'Cisco High Externship Program',
+        range: 'Cisco · Research Triangle Park, NC · Jul 2026',
+        logo: publicUrl('/logos/cisco.png'),
+        logoAlt: 'Cisco',
+        highlights: [
+          'Selected for Cisco’s competitive two-week High School Externship Program at Cisco’s RTP office.',
+          'Collaborated with a team to develop and present a technology consulting capstone project to make Buc-ee’s more competitive through Cisco and AI technology.',
+          'Participated in workshops covering networking fundamentals, AI prompting and agents, sustainability, leadership, personal branding, and emerging technology trends.',
+          'Built Beaver AI, an operations intelligence platform for Buc-ee’s travel centers featuring 24-hour demand forecasting, food-waste and staffing optimization, digital twins, scenario simulations, and Cisco AI Defense–framed security across a live demo network.',
+        ],
+      },
+      {
         title: 'AI Engineering Intern',
         range: 'Parle Technologies · Jun 2026 - Aug 2026',
         logo: publicUrl('/logos/parle-technologies.png'),
@@ -360,16 +385,16 @@ export const site = {
         logoAlt: 'Colorado School of Mines',
         logoSquare: true,
         highlights: [
-          'Accepted into the fully expense-paid Summer Mines and Engineering Training Program (SUMMET) at Colorado School of Mines—a selective one-week residential program with a 13% acceptance rate.',
+          'Accepted into the fully expense-paid Summer Mines and Engineering Training Program (SUMMET) at Colorado School of Mines, a selective one-week residential program with a 13% acceptance rate.',
           'Participated in hands-on workshops across mechanical engineering (Arduino and CTLM), electrical engineering, chemical and biological engineering, physics, quantitative biosciences and engineering, and 3D printing, including soldering and prototyping labs, and toured the Edgar Experimental Mine.',
           'Learned directly from Colorado School of Mines professors across mechanical, electrical, chemical and biological, and quantitative biosciences engineering, as well as physics.',
-          'Built and presented a week-long capstone project, The Citadel, on mine rescue—prototyping with recycled materials, Arduinos programmed in C++, IR sensors and LEDs for remote detection, and hand-soldered battery circuits to improve trapped miners\' access to survival necessities and prolong rescue windows.',
+          'Built and presented a week-long capstone project, The Citadel, on mine rescue: prototyping with recycled materials, Arduinos programmed in C++, IR sensors and LEDs for remote detection, and hand-soldered battery circuits to improve trapped miners\' access to survival necessities and prolong rescue windows.',
           'Developed collaboration, networking, research, prototyping, and presentation skills while working on a diverse team of students from across the country.',
           'Earned guaranteed undergraduate admission to Colorado School of Mines for the 2027 application cycle, with acceptance to any major of choice.',
         ],
       },
       {
-        title: 'Trainee — Precollege Program (Computer Engineering)',
+        title: 'Trainee: Precollege Program (Computer Engineering)',
         range: 'Rice University · Dec 2025',
         logo: publicUrl('/logos/rice.png'),
         logoAlt: 'Rice University',
@@ -379,18 +404,6 @@ export const site = {
           'Developed a culminating capstone project that helps frontline workers benefit the economy, with direct feedback and mentorship from AI architect Steven Greulich.',
         ],
         pdf: publicUrl('/certificates/rice-university-precollege-completion-certificate.pdf'),
-      },
-      {
-        title: 'Honeywell Leadership Challenge Academy (HLCA)',
-        range: 'US Space and Rocket Center, Alabama · Oct 2025',
-        logo: publicUrl('/logos/honeywell.png'),
-        logoAlt: 'Honeywell',
-        highlights: [
-          'Collaborated with students from around the world on engineering and leadership challenges, applying analytical thinking and problem-solving to real-world STEM scenarios and simulated space environments.',
-          'Developed programming, problem-solving, and decision-making skills in a fast-paced academic environment.',
-          'Our team earned Best Team by staying organized under tight deadlines, dividing work by strengths, and delivering thoughtful solutions across HLCA’s engineering and leadership missions—from design checkpoints to final presentations in front of staff and peers.',
-          'I was named Best Delegate for helping drive discussion, keeping our group aligned on priorities, and representing the team with clear communication, accountability, and professionalism throughout the academy.',
-        ],
       },
     ],
     footerNote: 'More experiences coming soon…',
