@@ -379,9 +379,10 @@ export const site = {
         logoSquare: true,
         website: 'https://parletech.com/',
         highlights: [
-          'I will be leading AI automation operations through a summer internship at Parle Technologies.',
-          'I will be leading projects for investment and healthcare companies, integrating AI to help automate business workflows.',
-          'I will be directly mentored by Georgia Institute of Technology alum Prabir Mehta.',
+          'Led AI automation operations through a summer internship at Parle Technologies, working alongside the development and systems engineering team to serve clients in investment and healthcare through AI integration.',
+          'Led projects for investment and healthcare companies, integrating AI to help automate business workflows.',
+          'Developed an AI-powered ticket management and analytics platform, implementing a full-stack solution end-to-end.',
+          'Directly mentored by Georgia Institute of Technology alum Prabir Mehta.',
         ],
       },
       {
