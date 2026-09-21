@@ -347,16 +347,16 @@ export const site = {
     title: 'Experience',
     items: [
       {
-        title: 'Incoming Development Team Intern',
+        title: 'Development Team Intern',
         range: 'DiversiTech · Aug 2026 - Dec 2026',
         logo: publicUrl('/logos/diversitech.png'),
         logoAlt: 'DiversiTech',
         website: 'https://www.diversitech.com/',
         highlights: [
-          'I will be engineering DT Edge into a production-track application, translating real-world technology and business requirements into an operational software solution built on a primarily Python-based stack (FastAPI, Streamlit, SQL, Docker) with GitHub and Cursor.',
-          'I will be driving end-to-end product development through a 100-day program — requirements analysis, MVP definition, system architecture, implementation, automated testing, CI/CD, documentation, user validation, and production readiness.',
-          'I will be developing a Root Cause Analysis (RCA) Metrics Dashboard that transforms incident data into actionable intelligence for Technology leadership, surfacing recurring failure patterns, resolution-time trends, system impact, and corrective-action effectiveness.',
-          'I will be presenting progress at three program checkpoints — an MVP demo, a Production Readiness Review, and a final "DT Edge: From Problem to Production" delivery — covering architecture, development process, and lessons learned.',
+          'Engineering DT Edge into a production-track application, translating real-world technology and business requirements into an operational software solution built on a primarily Python-based stack (FastAPI, Streamlit, SQL, Docker) with GitHub and Cursor.',
+          'Driving end-to-end product development through a 100-day program — requirements analysis, MVP definition, system architecture, implementation, automated testing, CI/CD, documentation, user validation, and production readiness.',
+          'Developing a Root Cause Analysis (RCA) Metrics Dashboard that transforms incident data into actionable intelligence for Technology leadership, surfacing recurring failure patterns, resolution-time trends, system impact, and corrective-action effectiveness.',
+          'Presenting progress at three program checkpoints — an MVP demo, a Production Readiness Review, and a final "DT Edge: From Problem to Production" delivery — covering architecture, development process, and lessons learned.',
         ],
       },
       {
