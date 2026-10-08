@@ -37,6 +37,9 @@ export default function Projects() {
                 <div className="mt-8 flex justify-center">
                   <Link
                     to={`/projects/${p.slug}`}
+                    onClick={
+                      p.liveUrl ? () => window.open(p.liveUrl, '_blank', 'noopener,noreferrer') : undefined
+                    }
                     className="inline-flex min-h-[2.75rem] min-w-[11rem] max-w-full items-center justify-center rounded-xl border border-violet-400/40 bg-violet-500/[0.12] px-6 py-3 text-base font-semibold tracking-wide text-violet-100 shadow-[0_0_24px_rgba(124,58,237,0.15)] transition hover:border-violet-400/55 hover:bg-violet-500/[0.18]"
                   >
                     {p.status ?? 'View more'}

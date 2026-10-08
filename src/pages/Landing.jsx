@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Home from './Home.jsx'
 import About from './About.jsx'
+import ProjectDrift from '../components/ProjectDrift.jsx'
 import Skills from './Skills.jsx'
 import Certifications from './Certifications.jsx'
 import Education from './Education.jsx'
@@ -25,6 +26,7 @@ export default function Landing() {
   return (
     <>
       <Home />
+      <ProjectDrift />
       <About />
       <Skills />
       <Certifications />

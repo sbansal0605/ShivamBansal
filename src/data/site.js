@@ -9,6 +9,10 @@ import { shelfSyncGallery } from './shelfSyncGallery.js'
 import { shelfSyncDetailSections } from './shelfSyncProjectDetail.js'
 import { citadelGallery } from './citadelGallery.js'
 import { citadelDetailSections } from './citadelProjectDetail.js'
+import { titanGuidanceGallery } from './titanGuidanceGallery.js'
+import { titanGuidanceDetailSections } from './titanGuidanceProjectDetail.js'
+import { skitsGallery } from './skitsGallery.js'
+import { skitsDetailSections } from './skitsProjectDetail.js'
 import { beaverAiGallery } from './beaverAiGallery.js'
 import { beaverAiDetailSections } from './beaverAiProjectDetail.js'
 
@@ -133,6 +137,39 @@ export const site = {
   ],
   projects: [
     {
+      title: 'CricketCoach: AI Cricket Analysis',
+      slug: 'cricketcoach',
+      description:
+        'AI-powered cricket coaching analysis: technique, performance metrics, and actionable feedback for players and coaches.',
+      href: null,
+      liveUrl: 'https://cricket-coaching.vercel.app/',
+      status: 'View More',
+      detailSections: cricketCoachDetailSections,
+      gallery: cricketCoachGallery,
+    },
+    {
+      title: 'Titan Guidance: Northview Student Guide',
+      slug: 'titan-guidance',
+      description:
+        'A Northview High School guide that pairs official school information with peer-written student experience: four-year planning, class reviews, clubs, events, and scholarships.',
+      href: null,
+      liveUrl: 'https://titan-guidance.onrender.com/',
+      status: 'View More',
+      detailSections: titanGuidanceDetailSections,
+      gallery: titanGuidanceGallery,
+    },
+    {
+      title: 'SKITS for Youth: Science for Kids Nonprofit',
+      slug: 'skits-for-youth',
+      description:
+        'Director of Website Development for SKITS, a student-run STEM nonprofit that has reached 800+ elementary students. I build and maintain skitsforyouth.org.',
+      href: null,
+      liveUrl: 'https://skitsforyouth.org/',
+      status: 'View More',
+      detailSections: skitsDetailSections,
+      gallery: skitsGallery,
+    },
+    {
       title: 'Beaver AI: Operations Intelligence for Buc-ee’s',
       slug: 'beaver-ai',
       description:
@@ -151,16 +188,6 @@ export const site = {
       status: 'View More',
       detailSections: citadelDetailSections,
       gallery: citadelGallery,
-    },
-    {
-      title: 'CricketCoach: AI Cricket Analysis',
-      slug: 'cricketcoach',
-      description:
-        'AI-powered cricket coaching analysis: technique, performance metrics, and actionable feedback for players and coaches.',
-      href: null,
-      status: 'View More',
-      detailSections: cricketCoachDetailSections,
-      gallery: cricketCoachGallery,
     },
     {
       title: 'FrontlineReady: AI Coaching for Frontline Workers',
@@ -347,11 +374,16 @@ export const site = {
     title: 'Experience',
     items: [
       {
-        title: 'Incoming Development Team Intern',
+        title: 'Development and Operations Team Intern',
         range: 'DiversiTech · Aug 2026 - Dec 2026',
         logo: publicUrl('/logos/diversitech.png'),
         logoAlt: 'DiversiTech',
         website: 'https://www.diversitech.com/',
+        highlights: [
+          'Engineering DT Edge into a production-track application that translates real-world technology and business requirements into an operational software solution, mentored by Carnegie Mellon University researcher Shandra Williams.',
+          'Driving end-to-end product development from requirements analysis and MVP definition through system architecture, implementation, automated testing, CI/CD, documentation, user validation, and production readiness.',
+          'Developing a Root Cause Analysis Metrics Dashboard that transforms incident data into actionable intelligence for Technology leadership, surfacing recurring failure patterns, resolution-time trends, system impact, and corrective-action effectiveness.',
+        ],
       },
       {
         title: 'Cisco High Externship Program',
